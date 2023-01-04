@@ -1,0 +1,100 @@
+*, html, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.blueHR {
+    color: #66C4ED;
+    width: 14.2rem;
+    margin-left: 1rem;
+    margin-top: -0.8rem;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 1rem;
+    color: white;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    gap: 1rem; 
+    margin-left: 1rem;
+    height: auto;
+}
+
+.book-card {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: white;
+    padding: 5px
+}
+
+.book-card img {
+    width: 85%;
+    height: 60%;
+}
+
+h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    color: white;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.book-info {
+    margin: 1rem;
+    background-color: #2D2D2D;
+    border-radius: 11px;
+    padding: 0.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+input {
+    margin-bottom: 0.8rem;
+    margin-top: 0.4rem;
+    padding: 0.5rem;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    border: 1px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
+    color: #66C4ED;
+    font-size: 1rem;
+    width: 13rem;
+}
+
+button {
+    font-style: none;
+    font-family: 'Space Grotesk', sans-serif;
+    padding: 5px 15px;
+    position: absolute;
+    top: 145px;
+    right: 45px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px;
+    box-shadow: 1px 1px 5px cyan;
+    color: #66C4ED;
+    font-weight: 700;
+}
