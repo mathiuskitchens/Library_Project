@@ -20,17 +20,18 @@
 
     <div class="book-info">
         <h2>Tell us the good stuff</h2>
-        <input placeholder="  Title...">
-        <input placeholder="  Author...">
-        <input placeholder="  Page count...">
 
 
-        <form action="/action_page.php" method="get" id="form1">
-            
-        <!--Need form/input for book info-->    
+
+        <form id="myForm">
+            <input type="text" class="bookInfo" id="title" name="title" required placeholder="  Title...">
+            <input type="text" class="bookInfo" id="author" name="author" required placeholder="  Author...">
+            <input type="number" class="bookInfo" id="pages" name="pages" required placeholder="  Page count...">
+         
 
         </form>
-        <button type="submit" form="form1" value="Submit">Add Book</button>
+
+        <button type="submit" form="myForm" value="Submit" >Add Book</button>
     </div>
 
 
@@ -44,6 +45,7 @@
         </div>
         <div class="book-card">
             <h2>Book 2</h2>
+            <img src="images/book-cover-placeholder.png">
             <h3>Author</h3>
             <h3>Pages</h3>
             <h3>Read Status</h3>
@@ -51,6 +53,6 @@
 
 
     </div>
-    
+    <script src="app.js"></script>
 </body>
 </html>
