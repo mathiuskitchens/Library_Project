@@ -15,15 +15,32 @@ function Book(title, author, pageCount, readStatus) {
 
 
 
-function grabData() {
-    alert(data);
-    submit.preventdefault();
-};
+
 
 const data = document.getElementsByClassName("bookInfo");
 
 
-form.addEventListener("submit", grabData);
+//const special = document.querySelectorAll('title');
+const test = document.getElementById('myForm').getElementsByClassName('bookInfo');
+
+
+
+
+//console.log(special);
+//console.log(test);
+console.log(test);
+
+
+document.querySelector("button").addEventListener("click", grabData);
+
+function grabData() {
+    console.log(test);
+   // submit.preventdefault();
+};
+
+
+
+
 
 
 
