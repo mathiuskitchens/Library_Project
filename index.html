@@ -26,35 +26,33 @@
     <div class="book-info">
       <h2>Tell us the good stuff</h2>
 
-      <form id="myForm">
+      <form id="my-form" action="">
+        <label for="title"></label>
         <input
           type="text"
-          class="bookInfo"
           id="title"
-          name="title"
+          name="form-info"
           required
           placeholder="  Title..."
         />
+        <label for="author"></label>
         <input
           type="text"
-          class="bookInfo"
           id="author"
-          name="author"
+          name="form-info"
           required
           placeholder="  Author..."
         />
+        <label for="pages"></label>
         <input
           type="number"
-          class="bookInfo"
           id="pages"
-          name="pages"
+          name="form-info"
           required
           placeholder="  Page count..."
         />
 
-        <button type="button" form="myForm" value="Submit" id="submitButton">
-          Add Book
-        </button>
+        <button type="submit" id="submit">Add Book</button>
       </form>
     </div>
 
