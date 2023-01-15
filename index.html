@@ -1,59 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
 
     <!--Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Library Project with JavaScript</title>
-</head>
-<body>
+  </head>
+
+  <body>
     <h1>My Incredible Library</h1>
 
-    <hr class="blueHR">
-
+    <hr class="blueHR" />
 
     <div class="book-info">
-        <h2>Tell us the good stuff</h2>
+      <h2>Tell us the good stuff</h2>
 
+      <form id="myForm">
+        <input
+          type="text"
+          class="bookInfo"
+          id="title"
+          name="title"
+          required
+          placeholder="  Title..."
+        />
+        <input
+          type="text"
+          class="bookInfo"
+          id="author"
+          name="author"
+          required
+          placeholder="  Author..."
+        />
+        <input
+          type="number"
+          class="bookInfo"
+          id="pages"
+          name="pages"
+          required
+          placeholder="  Page count..."
+        />
 
-
-        <form id="myForm">
-            <input type="text" class="bookInfo" id="title" name="title" required placeholder="  Title...">
-            <input type="text" class="bookInfo" id="author" name="author" required placeholder="  Author...">
-            <input type="number" class="bookInfo" id="pages" name="pages" required placeholder="  Page count...">
-         
-            <button type="button" form="myForm" value="Submit" >Add Book</button>
-        </div>
-
-        </form>
-
-    
-
+        <button type="button" form="myForm" value="Submit" id="submitButton">
+          Add Book
+        </button>
+      </form>
+    </div>
 
     <div class="card-container">
-        <div class="book-card">
-            <h2>Book 1</h2>
-            <img src="images/book-cover-placeholder.png">
-            <h3>Author</h3>
-            <h3>Pages</h3>
-            <h3>Read Status</h3>
-        </div>
-        <div class="book-card">
-            <h2>Book 2</h2>
-            <img src="images/book-cover-placeholder.png">
-            <h3>Author</h3>
-            <h3>Pages</h3>
-            <h3>Read Status</h3>
-        </div>
-
-
+      <div class="book-card">
+        <h2>Book 1</h2>
+        <img src="images/book-cover-placeholder.png" />
+        <h3>Author</h3>
+        <h3>Pages</h3>
+        <h3>Read Status</h3>
+      </div>
+      <div class="book-card">
+        <h2>Book 2</h2>
+        <img src="images/book-cover-placeholder.png" />
+        <h3>Author</h3>
+        <h3>Pages</h3>
+        <h3>Read Status</h3>
+      </div>
     </div>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
