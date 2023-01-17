@@ -1,4 +1,4 @@
-/* const myLibrary = [];
+const myLibrary = [];
 
 function Book(title, author, pageCount, readStatus) {
   // the constructor...
@@ -9,7 +9,7 @@ function Book(title, author, pageCount, readStatus) {
   this.printInfo = function () {
     console.log(`${title} by ${author}, ${pageCount} pages, `, readStatus);
   };
-} */
+}
 
 console.log("Waiting for a click...");
 
@@ -21,5 +21,8 @@ form?.addEventListener("submit", (event) => {
   event.preventDefault();
   const formData = new FormData(form);
 
-  console.log(formData.getAll("form-info")?.valueOf());
-});
+  myLibrary.push(formData.getAll("form-info")?.valueOf());
+  console.log(myLibrary);
+
+  // console.log(formData.getAll("form-info")?.valueOf());
+//});
