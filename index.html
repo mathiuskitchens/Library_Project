@@ -40,7 +40,6 @@
           type="text"
           id="author"
           name="form-info"
-          required
           placeholder="  Author..."
         />
         <label for="pages"></label>
@@ -48,8 +47,14 @@
           type="number"
           id="pages"
           name="form-info"
-          required
           placeholder="  Page count..."
+        />
+        <label for="read-status"></label>
+        <input
+          type="checkbox"
+          id="read-status"
+          name="form-info"
+          placeholder="Read?"
         />
 
         <button type="submit" id="submit">Add Book</button>
