@@ -16,6 +16,7 @@
         "no-console": "off",
         "no-unused-vars": "off",
         "quotes": "off",
-        "func-names": "off"
+        "func-names": "off",
+        "no-shadow": "off"
     }
 }

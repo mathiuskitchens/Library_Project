@@ -38,14 +38,16 @@ h1 {
   height: auto;
 }
 
-.book-card {
+.book-card,
+.book-card2 {
   border-style: solid;
   border-radius: 10px;
   border-color: white;
   padding: 5px;
 }
 
-.book-card img {
+.book-card img,
+.book-card2 img {
   width: 85%;
   height: 60%;
 }
