@@ -8,18 +8,19 @@ function Book(title, author, pageCount, readStatus) {
   this.readStatus = readStatus;
 }
 console.log("Waiting for a click...");
-// Get user input
+
 const submitButton = document.getElementById("submit");
 const form = document.getElementById("my-form");
 
+// tag DOM elements for reference
 const bookParent = document.getElementById("book-parent");
 const input = document.querySelector("input");
 const button = document.querySelector("button");
-let printedReadStatus = "";
-// Function to add newBook to DOM
+const image = document.getElementById("book-image");
 
 input.focus();
 
+// Function to get user input and add newBook to DOM
 form?.addEventListener("submit", (e) => {
   console.log("CLICK...");
   e.preventDefault();
@@ -28,12 +29,10 @@ form?.addEventListener("submit", (e) => {
   const testBook = formData.getAll("form-info")?.valueOf();
   const newBook = new Book(...testBook);
 
-  // Get read status for visual
-  console.log(newBook.readStatus);
-
   // create placeholders for new book being added to DOM
   const wholeBook = document.createElement("div");
   const bookTitle = document.createElement("h2");
+  const bookImage = document.createElement("img");
   const bookAuthor = document.createElement("h3");
   const bookPages = document.createElement("h3");
   const readStatus = document.createElement("h3");
@@ -42,19 +41,21 @@ form?.addEventListener("submit", (e) => {
   bookTitle.textContent = newBook.title;
   bookAuthor.textContent = newBook.author;
   bookPages.textContent = newBook.pageCount;
+  readStatus.textContent = newBook.readStatus;
+  bookImage.setAttribute("src", "images/book-cover-placeholder.png");
 
-  function updateStatus(readStatus) {
-    if (readStatus === "on") {
-      printedReadStatus = "Read";
-    } else {
-      printedReadStatus = "Not Read";
-    }
+  console.log(newBook.readStatus);
+  console.log(testBook[3]);
+  const readHolder = testBook[3];
+  if (readHolder === "on") {
+    readStatus.textContent = "Read";
+  } else {
+    readStatus.textContent = "Not Read";
   }
-  updateStatus();
-  readStatus.textContent = printedReadStatus;
 
   // add to DOM
   wholeBook.appendChild(bookTitle);
+  wholeBook.appendChild(bookImage);
   wholeBook.appendChild(bookAuthor);
   wholeBook.appendChild(bookPages);
   wholeBook.appendChild(readStatus);
